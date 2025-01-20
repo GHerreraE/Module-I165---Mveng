@@ -1,0 +1,15 @@
+{
+  "cours": "I165",
+  "semestre": 2,
+  "anne": 2025,
+  "etudiants": [
+    {
+      "nom": "Herrera",
+      "prenom": "Gonzalo"
+    },
+    {
+      "nom": "Herrera",
+      "prenom": "Gonzalo"
+    }
+  ]
+}

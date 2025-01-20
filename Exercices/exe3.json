@@ -1,0 +1,19 @@
+{
+  "fruits": [
+    {
+      "nom": "banane",
+      "prix": 5.99,
+      "code": 77
+    },
+    {
+      "nom": "pomme",
+      "prix": 2.99,
+      "code": 99
+    },
+    {
+      "nom": "poire",
+      "prix": 7.99,
+      "code": 170
+    }
+  ]
+}
