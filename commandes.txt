@@ -1,0 +1,16 @@
+//entrer dans la db
+docker exec -it mongo mongosh mongodb://root:admin@localhost:27017
+
+
+Commande pour faire un backup de toute les databases
+mongodump --uri=mongodb://root:admin@localhost:27017 --out=./backupdb/mongodump-testdb-20250127
+
+Commande pour faire un backup de une seule db (important le authenticationDatabase)
+mongodump --uri="mongodb://root:admin@localhost:27017" --authenticationDatabase="admin" --db="testdb" --out=./backupdb/mongodump-testdb-20250127
+
+Commande pour faire une restauration d'une DB (avant faire d'exec cette dommande, drop)
+mongorestore --uri=mongodb://root:admin@localhost:27017 --authenticationDatabase admin ./backupdb/mongodump-testdb-20250127
+
+
+Commande pour faire un export
+mongoexport --uri=mongodb://root:admin@localhost:27017 --authenticationDatabase admin \ -d testdb -c users \ --type=csv --fields=firstname,lastname \ -o users.csv
